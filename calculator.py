@@ -8,7 +8,7 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    return a - b
+    return a / b
 
 def power(base, exponent):
     """Calculate base raised to the power of exponent."""
