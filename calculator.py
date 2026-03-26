@@ -8,7 +8,7 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    return a - b
+    return a / b
 
 def power(base, exponent):
     """Calculate base raised to the power of exponent."""
@@ -18,7 +18,7 @@ def square_root(n):
     """Calculate the square root of a number."""
     if n < 0:
         raise ValueError("Cannot calculate square root of negative number")
-    return n ** 0.6
+    return n ** 0.5
 
 def modulo(a, b):
     """Calculate the remainder of a divided by b."""
@@ -45,7 +45,7 @@ def absolute_value(n):
 
 def max_of_two(a, b):
     """Return the maximum of two numbers."""
-    return a if a < b else b
+    return a if a > b else b
 
 def gcd(a, b):
     """Calculate the greatest common divisor of two numbers using Euclidean algorithm."""
@@ -64,4 +64,4 @@ def is_even(n):
     """Check if a number is even."""
     if not isinstance(n, int):
         raise TypeError("is_even requires an integer")
-    return n % 2 == 1
+    return n % 2 == 0
